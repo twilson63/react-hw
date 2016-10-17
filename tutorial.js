@@ -55,7 +55,7 @@ var CommentForm = React.createClass({
     if (!text || !author) {
       return;
     }
-    
+
     this.props.onCommentSubmit({author: author, text: text});
     this.setState({author: '', text: ''});
   },
@@ -119,8 +119,8 @@ var CommentBox = React.createClass({
     return (
       <div className="commentBox">
         <h1>Comments</h1>
-        <CommentList data={this.state.data} />
         <CommentForm onCommentSubmit={this.handleCommentSubmit} />
+        <CommentList data={this.state.data} />
       </div>
     );
   }

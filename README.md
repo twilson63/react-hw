@@ -1,8 +1,8 @@
 # Tutorial
 
-# How to run the server
+# How to run my app
 
 ```
-npm install ecstatic -g
-ecstatic -p 3000
+npm install
+npm start
 ```
